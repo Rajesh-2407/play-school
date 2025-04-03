@@ -1,0 +1,198 @@
+.home-content-new {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}
+
+/* Header Styling */
+.home-header {
+  background-color: #ffcc00;
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Section Styling */
+.home-activities, 
+.home-educators, 
+.home-safety, 
+.home-parent-teacher, 
+.home-learning, 
+.home-why-choose {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-activities:hover, 
+.home-educators:hover, 
+.home-safety:hover, 
+.home-parent-teacher:hover, 
+.home-learning:hover, 
+.home-why-choose:hover {
+  transform: scale(1.03);
+}
+
+/* Image Styling */
+.home-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.home-image:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Content Layout */
+.homecontent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping */
+  gap: 20px;
+}
+
+.home-imggif img {
+  max-width: 100%;
+  height: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.homecontent-icon {
+  padding: 5px;
+  background-color: #ff6600;
+  border-radius: 50%;
+}
+
+.homecontent-left {
+  flex: 1;
+  padding: 10px;
+  min-width: 300px; /* Prevents elements from becoming too small */
+}
+
+/* Why Choose Us Section */
+.home-why-choose {
+  text-align: center;
+}
+
+.home-why-choose h1 {
+  color: #ff6600;
+}
+
+.home-why-choose-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home-why-choose1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-why-choose2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-why-choose2 li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+/* Footer */
+.home-footer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffcc00;
+  border-radius: 10px;
+}
+
+.home-visit-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.home-visit-btn:hover {
+  background: #e65c00;
+}
+
+/* Responsive Design */
+
+/* 📱 Mobile (up to 767px) */
+@media (max-width: 767px) {
+  .homecontent-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-imggif img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .home-why-choose-head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-why-choose2 ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  .home-why-choose2 li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home-footer {
+    text-align: center;
+  }
+}
+
+/* 📟 Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .homecontent-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-why-choose-head {
+    justify-content: center;
+  }
+
+  .home-imggif img {
+    width: 80%;
+  }
+}
+
+/* 💻 Laptop (1024px - 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .home-imggif img {
+    width: 450px;
+    height: auto;
+  }
+
+  .home-why-choose-head {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

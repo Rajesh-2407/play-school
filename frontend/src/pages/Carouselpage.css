@@ -1,0 +1,77 @@
+.carousel-container {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .carousel-image {
+  padding: 10px;
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Navigation Buttons Inside Image */
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev-button { left: 20px; }
+  .next-button { right: 20px; }
+  
+  .prev-button:hover, .next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+ 
+  
+  .carousel-btn {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    background: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .carousel-image { height: 350px; }
+    .carousel-content { width: 220px; }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-image { height: 300px; }
+    .carousel-content { width: 200px; font-size: 0.8rem; }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-image { height: 250px; }
+    .prev-button, .next-button { font-size: 1rem; padding: 8px; }
+    .carousel-content { width: 180px; font-size: 0.7rem; }
+  }
+  

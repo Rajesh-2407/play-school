@@ -1,0 +1,89 @@
+/* Container */
+.teachers-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .teachers-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  /* Grid Layout */
+  .teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* Teacher Card */
+  .teacher-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .teacher-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Teacher Image */
+  .teacher-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50% 10%;
+  }
+  
+  /* Teacher Info */
+  .teacher-info {
+    margin-top: 10px;
+  }
+  
+  .teacher-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .teacher-subject {
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .teacher-bio {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .teachers-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .teachers-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .teachers-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
